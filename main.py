@@ -25,7 +25,7 @@ async def get_signal(request: SignalRequest):
     signal = evaluate_signal(request.ticker, request.prices, request.volumes)
     
     # Auto-alert on high confidence signals
-    if signal["state"] != "NEUTRAL" and signal["confidence"] > 70:
+    if signal["state"] != "NEUTRAL" and signal["confidence"] >= 0:
         send_s3_alert(signal)
         
     return signal
