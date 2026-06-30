@@ -1,0 +1,13 @@
+{
+  "name": "s3-signal-system",
+  "description": "S3-backed market signal storage and delivery system",
+  "owner": "ScriptMasterLabs",
+  "github": "https://github.com/timwal78/s3-signal-system",
+  "contact": "scriptmasterlabs@gmail.com",
+  "sovereign": {
+    "noMockData": true,
+    "liveDataOnly": true,
+    "noTelemetry": true,
+    "enforcedBy": ".github/workflows/sovereign-data-check.yml"
+  }
+}
